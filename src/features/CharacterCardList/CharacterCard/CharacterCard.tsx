@@ -29,7 +29,7 @@ interface CharacterCardPropsType{
 }
 export function CharacterCard(props: CharacterCardPropsType) {
 
-    return ( <Grid key={props.character.id} item xs={6} sm={6} md={3}>
+    return (
                         <Card >
                             <CardHeader sx={{paddingBottom: 0}}
                                 avatar={
@@ -63,7 +63,7 @@ export function CharacterCard(props: CharacterCardPropsType) {
                             </CardContent>
 
                         </Card>
-                    </Grid>
+
     )
 
 }

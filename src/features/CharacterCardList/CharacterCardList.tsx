@@ -35,7 +35,9 @@ export function CharacterCardList() {
         <Grid py={3} container alignItems="stretch" spacing={2}>
             {characters ?
                 characters.map((char) => {
-                    return <CharacterCard character={char}/>
+                    return <Grid key={char.id} item xs={6} sm={6} md={3}>
+                    <CharacterCard character={char}/>
+                    </Grid>
                 })
                 :
                 <div>no chars</div>
